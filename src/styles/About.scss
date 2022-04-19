@@ -1,0 +1,45 @@
+@import 'mixin.scss';
+
+.about {
+  width: 100%;
+  height: 90vh;
+  @include flex_colom;
+}
+
+.aboutTop {
+  height: 45%;
+  @include bg_cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.aboutBottom {
+  @include flex_colom;
+  height: 55%;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.aboutBottom p {
+  width: 1200px;
+}
+
+.about .aboutBottom h1 {
+  font-weight: 400;
+  font-size: 70px;
+  color: $hitam;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-40px);
+}
+
+@media screen and (max-width: 960px){
+  .aboutBottom {
+    height: 100%;
+  }
+  
+  .aboutBottom p {
+    margin-bottom: 25px;
+    width: 80%;
+  }
+}

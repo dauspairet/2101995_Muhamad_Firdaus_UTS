@@ -1,0 +1,33 @@
+$putih : white;
+$hitam : black;
+
+@mixin flex_center{
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex_nodecor{
+  @include flex_center;
+  color: $putih;
+  text-decoration: none;
+}
+
+@mixin objek_center{
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex_colom{
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex_row_wrap{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin bg_cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
